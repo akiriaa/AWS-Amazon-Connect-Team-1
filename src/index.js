@@ -3,10 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './Home'
+import Chat from './Chat'
+import Recordings from './Recordings'
+import List from './List'
+
+const { DynamoDBClient, ListTablesCommand } = require("@aws-sdk/client-dynamodb");
+
+(async () => {
+  const client = new DynamoDBClient({ region: "us-east-2" });
+  const command = new ListTablesCommand({});
+  try {
+    const results = await client.send(command);
+    console.log(results.TableNames.join("\n"));
+  } catch (err) {
+    console.error(err);
+  }
+})();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <List />
   </React.StrictMode>,
   document.getElementById('root')
 );

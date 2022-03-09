@@ -1,0 +1,7 @@
+type Audio @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String!
+  description: String!
+  filePath: String!
+  owner: String!
+}

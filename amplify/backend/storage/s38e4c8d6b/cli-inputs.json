@@ -1,0 +1,13 @@
+{
+  "resourceName": "s38e4c8d6b",
+  "policyUUID": "8e4c8d6b",
+  "bucketName": "awsamazonconnectteambucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

@@ -1,15 +1,42 @@
 {
+  "api": {
+    "AWSAmazonConnectTeam1": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authawsamazonconnectteam64605a52"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            },
+            {
+              "authenticationType": "API_KEY",
+              "apiKeyConfig": {
+                "apiKeyExpirationDays": 365,
+                "apiKeyExpirationDate": "2023-03-09T02:46:11.291Z",
+                "description": "audio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
   "auth": {
-    "awsconnectc248b70d": {
+    "awsamazonconnectteam64605a52": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
         "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
+        "usernameAttributes": [],
         "signupAttributes": [
           "EMAIL"
         ],
@@ -25,6 +52,19 @@
           "EMAIL"
         ]
       }
+    }
+  },
+  "storage": {
+    "awsamazonconnectteam810b864e": {
+      "service": "S3",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
+    },
+    "s38e4c8d6b": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
     }
   }
 }

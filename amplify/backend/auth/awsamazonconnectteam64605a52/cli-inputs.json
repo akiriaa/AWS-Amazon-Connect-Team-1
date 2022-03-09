@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "awsconnectc248b70d_identitypool_c248b70d",
+    "identityPoolName": "awsamazonconnectteam64605a52_identitypool_64605a52",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "awsconc248b70d",
-    "userPoolName": "awsconnectc248b70d_userpool_c248b70d",
+    "resourceNameTruncated": "awsama64605a52",
+    "userPoolName": "awsamazonconnectteam64605a52_userpool_64605a52",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,15 +31,12 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "awsconc248b70d_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "awsama64605a52_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "c248b70d",
-    "resourceName": "awsconnectc248b70d",
+    "sharedId": "64605a52",
+    "resourceName": "awsamazonconnectteam64605a52",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
-    "usernameAttributes": [
-      "email"
-    ],
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,

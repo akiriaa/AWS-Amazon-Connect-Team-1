@@ -1,6 +1,13 @@
 export type AmplifyDependentResourcesAttributes = {
+    "api": {
+        "AWSAmazonConnectTeam1": {
+            "GraphQLAPIKeyOutput": "string",
+            "GraphQLAPIIdOutput": "string",
+            "GraphQLAPIEndpointOutput": "string"
+        }
+    },
     "auth": {
-        "awsconnectc248b70d": {
+        "awsamazonconnectteam64605a52": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
             "UserPoolId": "string",
@@ -8,6 +15,12 @@ export type AmplifyDependentResourcesAttributes = {
             "UserPoolName": "string",
             "AppClientIDWeb": "string",
             "AppClientID": "string"
+        }
+    },
+    "storage": {
+        "s38e4c8d6b": {
+            "BucketName": "string",
+            "Region": "string"
         }
     }
 }
