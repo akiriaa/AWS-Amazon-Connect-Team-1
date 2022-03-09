@@ -10,6 +10,8 @@ import Recordings from './Recordings';
 // import awsExports from './aws-exports'
 import Nav from './Nav';
 
+
+
 Amplify.configure(awsconfig);
 
 function App() {
@@ -17,11 +19,23 @@ function App() {
     <Authenticator >
       {({ signOut }) => (
         <main>
-          <h1>Hello</h1>
+          {/* <Link to="/Chat"><button>
+              Chat 
+            </button>
+            </Link>
+          <button>Chat</button>
+          <button>Recordings</button> */}
           <button onClick={signOut}>Sign out</button>
+          <Home />
         </main>
       )}
+
+      
     </Authenticator>
+
+
+
+
 
   );
 }

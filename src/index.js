@@ -24,7 +24,7 @@ const { DynamoDBClient, ListTablesCommand } = require("@aws-sdk/client-dynamodb"
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <List />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
