@@ -1,4 +1,6 @@
 {
   "resourceName": "awsamazonconnectteam810b864e",
-  "serviceType": "imported"
+  "serviceType": "imported",
+  "bucketName": "amazon-connect-c5138a2c2b4d",
+  "region": "us-east-1"
 }
