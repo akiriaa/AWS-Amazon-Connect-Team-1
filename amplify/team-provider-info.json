@@ -1,4 +1,28 @@
 {
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify6919ae9fe3464-staging-151602-authRole",
+      "UnauthRoleArn": "arn:aws:iam::249945103734:role/amplify-amplify6919ae9fe3464-staging-151602-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::249945103734:role/amplify-amplify6919ae9fe3464-staging-151602-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplify6919ae9fe3464-staging-151602-deployment",
+      "UnauthRoleName": "amplify-amplify6919ae9fe3464-staging-151602-unauthRole",
+      "StackName": "amplify-amplify6919ae9fe3464-staging-151602",
+      "StackId": "arn:aws:cloudformation:us-east-2:249945103734:stack/amplify-amplify6919ae9fe3464-staging-151602/ab0887e0-9ef2-11ec-a346-0a11907bf99c",
+      "AmplifyAppId": "d2rkgln3gvvz77"
+    },
+    "categories": {
+      "auth": {
+        "awsamazonconnectteam64605a52": {}
+      },
+      "storage": {
+        "awsamazonconnectteam810b864e": {
+          "bucketName": "amazon-connect-c5138a2c2b4d",
+          "region": "us-east-1"
+        }
+      }
+    }
+  },
   "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-awsconnect-dev-184601-authRole",
@@ -9,7 +33,7 @@
       "UnauthRoleName": "amplify-awsconnect-dev-184601-unauthRole",
       "StackName": "amplify-awsconnect-dev-184601",
       "StackId": "arn:aws:cloudformation:us-east-1:249945103734:stack/amplify-awsconnect-dev-184601/54ae7a30-87af-11ec-b159-0aeaaa124225",
-      "AmplifyAppId": "d2lo37qv0677pc"
+      "AmplifyAppId": "d2rkgln3gvvz77"
     },
     "categories": {
       "auth": {
