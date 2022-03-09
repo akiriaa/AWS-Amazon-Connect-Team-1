@@ -2,7 +2,7 @@ import { ConsoleLogger } from '@aws-amplify/core';
 import Amplify, { Auth, Storage } from 'aws-amplify';
 import {useEffect, useState} from 'react';
 
-Auth.configure(awsconfig)
+// Auth.configure(awsconfig)
 
 
 // Amplify.configure({
