@@ -16,9 +16,12 @@
         "awsamazonconnectteam64605a52": {}
       },
       "storage": {
-        "awsamazonconnectteam810b864e": {
-          "bucketName": "amazon-connect-c5138a2c2b4d",
-          "region": "us-east-1"
+        "testResourceName1": {
+          "tableName": "Audio-ggqriogmrjd35jbiqq4cb6254i-staging",
+          "region": "us-east-2",
+          "arn": "arn:aws:dynamodb:us-east-2:249945103734:table/Audio-ggqriogmrjd35jbiqq4cb6254i-staging",
+          "partitionKeyName": "id",
+          "partitionKeyType": "String"
         }
       }
     }
