@@ -6,20 +6,20 @@ import {useEffect, useState} from 'react';
 function List() {
     const [files, setFiles] = useState([])
 
-    useEffect(() => {
-        Amplify.configure({
-            Auth: {
-                identityPoolId: 'us-east-1:71506b7d-6b6b-4cbf-9cbf-3d058f6399f6', //REQUIRED - Amazon Cognito Identity Pool ID
-                region: 'us-east-1', // REQUIRED - Amazon Cognito Region
-            },
-            Storage: {
-                AWSS3: {
-                    bucket: 'awsamazonconnectteambucket151602-staging', //REQUIRED -  Amazon S3 bucket name
-                    region: 'us-east-2', //OPTIONAL -  Amazon service region
-                }
-            }
-        })
-    }, []);
+    // useEffect(() => {
+    //     Amplify.configure({
+    //         Auth: {
+    //             identityPoolId: 'us-east-1:71506b7d-6b6b-4cbf-9cbf-3d058f6399f6', //REQUIRED - Amazon Cognito Identity Pool ID
+    //             region: 'us-east-1', // REQUIRED - Amazon Cognito Region
+    //         },
+    //         Storage: {
+    //             AWSS3: {
+    //                 bucket: 'amazon-connect-c5138a2c2b4d', //REQUIRED -  Amazon S3 bucket name
+    //                 region: 'us-east-1', //OPTIONAL -  Amazon service region
+    //             }
+    //         }
+    //     })
+    // }, []);
 
     useEffect(() => {
         Storage.list('').then(files => { 
