@@ -9,6 +9,7 @@ import Chat from './Chat';
 import Recordings from './Recordings';
 // import awsExports from './aws-exports'
 import Nav from './Nav';
+import List from './List';
 
 Amplify.configure(awsconfig);
 
@@ -19,6 +20,7 @@ function App() {
         <main>
           <h1>Hello</h1>
           <button onClick={signOut}>Sign out</button>
+          <List/>
         </main>
       )}
     </Authenticator>

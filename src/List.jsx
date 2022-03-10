@@ -1,10 +1,12 @@
 import { ConsoleLogger } from '@aws-amplify/core';
 import Amplify, { Auth, Storage } from 'aws-amplify';
 import {useEffect, useState} from 'react';
+import { useRef } from 'react/cjs/react.production.min';
 
 
 function List() {
     const [files, setFiles] = useState([])
+    const [ref] = useRef(null); 
 
     useEffect(() => {
         Amplify.configure({
@@ -21,8 +23,19 @@ function List() {
         })
     }, []);
 
+
+    // const loadFiles = () => {
+    //     Storage.list('')
+    //         .then(files => { 
+    //         setFiles(files);
+    //     }).catch(err => { 
+    //         console.log(err)
+    //     });
+    // }
+
     useEffect(() => {
-        Storage.list('').then(files => { 
+        Storage.list('')
+            .then(files => { 
             setFiles(files);
         }).catch(err => { 
             console.log(err)
@@ -35,6 +48,16 @@ function List() {
           setFiles(resp)
         }).catch(err => { console.log(err); });
       }
+    
+    const handleFileLoad = () => {}
+        const filename = ref.current.files[0].name;
+        Storage.put(filename,ref.current.files[0].then(resp => {
+            console.log(resp);
+            //loadFiles;
+        }).catch(err => {console.log(err);})
+        )
+        
+
 
     return (
         <main className="body-content">
@@ -50,12 +73,16 @@ function List() {
                         <td>Placeholder</td>
                     </tr>
                 </thead>
-                <tbody>
-                    {files.map(file => (
-                        <tr>
+                <div>
+                    <input ref = {ref} type="file" onChange={handleFileLoad}/>
+                </div>
+                <tbody> 
+                    {
+                    files.map((file,i) => (
+                        <tr key={file.key}>
+                            <td> {i}</td>
                             <td>{file.key}</td>
                             <td><button onClick={() => handleShow(file.key)}>Play</button></td>
-
                         </tr>
                     ))}
                 </tbody>
