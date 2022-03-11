@@ -19,13 +19,7 @@ function App() {
     <Authenticator >
       {({ signOut }) => (
         <main>
-          {/* <Link to="/Chat"><button>
-              Chat 
-            </button>
-            </Link>
-          <button>Chat</button>
-          <button>Recordings</button> */}
-          <button onClick={signOut}>Sign out</button>
+          <button onClick={signOut} className="signOut">Sign out</button>
           <Home />
         </main>
       )}
