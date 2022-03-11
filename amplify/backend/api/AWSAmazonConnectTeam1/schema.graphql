@@ -1,4 +1,4 @@
-type Audio @model @auth(rules: [{allow: public}]) {
+type Todo @model @auth(rules: [{allow: public}]) {
   id: ID!
   title: String!
   description: String!
