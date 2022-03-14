@@ -1,27 +1,90 @@
 import { ConsoleLogger } from '@aws-amplify/core';
-import Amplify, { Auth, Storage } from 'aws-amplify';
+import Amplify, { Auth, Storage} from 'aws-amplify';
 import {useEffect, useState} from 'react';
-import { useRef } from 'react/cjs/react.production.min';
+import { useRef } from 'react/cjs/react.production.min'; 
+import Nav from "./Nav"
 
 
 function List() {
-    const [files, setFiles] = useState([])
-    const [ref] = useRef(null); 
+    const [files, setFiles] = useState([]);
+    const [ref] = useRef(null);
+
+
+    // Create a service client with the provider
+    // var dynamodb = new AWS.DynamoDB({region: 'us-west-2'});
+ // Initialize the Amazon Cognito credentials provider
+    // CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
+    //     getApplicationContext(),
+    //     "us-east-1:791e45ec-edb9-4a37-a029-c03efb312b33", // Identity pool ID
+    //     Regions.US_EAST_1 // Region
+    //     );
 
     useEffect(() => {
         Amplify.configure({
             Auth: {
-                identityPoolId: 'us-east-1:71506b7d-6b6b-4cbf-9cbf-3d058f6399f6', //REQUIRED - Amazon Cognito Identity Pool ID
+                identityPoolId: 'us-east-1:e2aff3de-0d7f-435b-b07f-4e15dc60f200', //REQUIRED - Amazon Cognito Identity Pool ID
                 region: 'us-east-1', // REQUIRED - Amazon Cognito Region
             },
             Storage: {
                 AWSS3: {
                     bucket: 'awsamazonconnectteambucket151602-staging', //REQUIRED -  Amazon S3 bucket name
-                    region: 'us-east-2', //OPTIONAL -  Amazon service region
+                  //  region: 'us-east-2', //OPTIONAL -  Amazon service region
                 }
             }
+            
+
         })
     }, []);
+    // const handleUserCredentials = () => {
+    //     var params = {
+    //         IdentityId: 'STRING_VALUE', /* required */
+    //         CustomRoleArn: 'STRING_VALUE',
+    //         Logins: {
+    //           '<IdentityProviderName>': 'STRING_VALUE',
+    //           /* '<IdentityProviderName>': ... */
+    //         }
+    //       };
+        // cognitoidentity.getCredentialsForIdentity(params, function(err, data) {
+        // if (err) console.log(err, err.stack); // an error occurred
+        // else     console.log(data);           // successful response
+        // });}
+        // Amplify.config.region = 'us-east-1';
+
+        // // Configure the credentials provider to use your identity pool
+        // Amplify.config.credentials = new Amplify.CognitoIdentityCredentials({
+        //     IdentityPoolId: 'IDENTITY_POOL_ID',
+        // });
+        
+        // Amplify.config.credentials.get(function(){
+
+        //     // Credentials will be available when this function is called.
+        //     var accessKeyId = Amplify.config.credentials.accessKeyId;
+        //     var secretAccessKey = Amplify.config.credentials.secretAccessKey;
+        //     var sessionToken = Amplify.config.credentials.sessionToken;
+        //     var identityId = Amplify.config.credentials.identityId;
+
+        
+     //   });
+
+
+
+    // useEffect(() => {
+    //     Amplify.configure({
+    //         Auth: {
+    //             identityPoolId: 'us-east-1:e2aff3de-0d7f-435b-b07f-4e15dc60f200', //REQUIRED - Amazon Cognito Identity Pool ID
+    //             region: 'us-east-1', // REQUIRED - Amazon Cognito Region
+    //         },
+    //         Storage: {
+    //             AWSS3: {
+    //                 bucket: 'awsamazonconnectteambucket151602-staging', //REQUIRED -  Amazon S3 bucket name
+    //               //  region: 'us-east-2', //OPTIONAL -  Amazon service region
+    //             }
+    //         }
+            
+
+    //     })
+    // }, []);
+
 
 
     // const loadFiles = () => {
@@ -61,7 +124,7 @@ function List() {
 
     return (
         <main className="body-content">
-            {/* <Nav /> */}
+            <Nav />
             <div className="home-title">
                 <h1> Recordings </h1>
             </div> 
@@ -90,51 +153,6 @@ function List() {
         </main>
     );
 
-}
+};                  
 
-export default List
-
-
-
-
-// import awsconfig from './aws-exports';
-// //Amplify.configure(awsconfig);
-
-
-// Amplify.configure({
-//     Auth: {
-//         identityPoolId: 'us-east-1:71506b7d-6b6b-4cbf-9cbf-3d058f6399f6', //REQUIRED - Amazon Cognito Identity Pool ID
-//         region: 'us-east-1', // REQUIRED - Amazon Cognito Region
-//         //userPoolId: 'XX-XXXX-X_abcd1234', //OPTIONAL - Amazon Cognito User Pool ID
-//         //userPoolWebClientId: 'XX-XXXX-X_abcd1234', //OPTIONAL - Amazon Cognito Web Client ID
-//     },
-//     Storage: {
-//         AWSS3: {
-//             bucket: 'amazon-connect-c5138a2c2b4d', //REQUIRED -  Amazon S3 bucket name
-//             region: 'us-east-1', //OPTIONAL -  Amazon service region
-//         }
-//     }
-// });
-
-// Storage.list('') // for listing ALL files without prefix, pass '' instead
-//     .then(result => console.log(result))
-//     .catch(err => console.log(err));
-
-
-// function List(results) {
-//     const filesystem = {}
-//     const add = (source, target, item) => {
-//       const elements = source.split("/");
-//       const element = elements.shift();
-//       if (!element) return // blank
-//       target[element] = target[element] || {__data: item}// element;
-//       if (elements.length) {
-//         target[element] = typeof target[element] === "object" ? target[element] : {};
-//         add(elements.join("/"), target[element], item);
-//       }
-//     };
-//     results.forEach(item => add(item.key, filesystem, item));
-//     return filesystem
-// }
-
-// export default List;
+export default List;

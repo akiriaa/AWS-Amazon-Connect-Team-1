@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
-import { Authenticator } from '@aws-amplify/ui-react';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import Home from './Home';
 import Chat from './Chat';
@@ -16,11 +16,12 @@ Amplify.configure(awsconfig);
 function App() {
   return ( 
     <Authenticator >
-      {({ signOut }) => (
+      {({ signOut}) => (
         <main>
-          <h1>Hello</h1>
+          <h1>Hello</h1> 
+          <text> Did it work ?</text>
           <button onClick={signOut}>Sign out</button>
-          <List/>
+        
         </main>
       )}
     </Authenticator>

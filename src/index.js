@@ -7,29 +7,51 @@ import Home from './Home'
 import Chat from './Chat'
 import Recordings from './Recordings'
 import List from './List'
+import Amplify from 'aws-amplify';
+//import { REDIRECTED_FROM_HOSTED_UI } from '@aws-amplify/ui-components/dist/types/common/constants';
 
 const { DynamoDBClient, ListTablesCommand } = require("@aws-sdk/client-dynamodb");
 
 (async () => {
-  const client = new DynamoDBClient({ region: "us-east-2" });
+  const client = new DynamoDBClient({ region: "us-east-1" });
+  // Amplify.config.region = 'us-east-1';
+
+  // Configure the credentials provider to use your identity pool
+  // Amplify.config.credentials = new Amplify.CognitoIdentityCredentials({
+  //     IdentityPoolId: 'IDENTITY_POOL_ID',
+  // });
+  
+  // Amplify.config.credentials.get(function(){
+
+  //     // Credentials will be available when this function is called.
+  //     var accessKeyId = Amplify.config.credentials.accessKeyId;
+  //     var secretAccessKey = Amplify.config.credentials.secretAccessKey;
+  //     var sessionToken = Amplify.config.credentials.sessionToken;
+  //     var identityId = Amplify.config.credentials.identityId;
+  //     console.log(identityId);
+
   const command = new ListTablesCommand({});
+
   try {
-    const results = await client.send(command);
-    console.log(results.TableNames.join("\n"));
+    const results = /*await*/ client.send(command);
+    console.log(results.TableNames.join("\n"))
   } catch (err) {
-    console.error(err);
+    console.error(err)
   }
-})();
+//
+}
+)();
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     <List />
   </React.StrictMode>,
   document.getElementById('root')
 );
 
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals(console.log);
