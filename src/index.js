@@ -8,6 +8,12 @@ import Chat from './Chat'
 import Recordings from './Recordings'
 import List from './List'
 
+import config from './aws-exports'
+import Amplify from 'aws-amplify'
+import {AmplifyProvider} from '@aws-amplify/ui-react'
+import '@aws-amplify/ui-react/styles.css'
+Amplify.configure(config)
+
 const { DynamoDBClient, ListTablesCommand } = require("@aws-sdk/client-dynamodb");
 
 (async () => {
@@ -22,10 +28,11 @@ const { DynamoDBClient, ListTablesCommand } = require("@aws-sdk/client-dynamodb"
 })();
 
 ReactDOM.render(
-  <React.StrictMode>
+
+  <AmplifyProvider>
     {/* <App /> */}
     <App />
-  </React.StrictMode>,
+  </AmplifyProvider>,
   document.getElementById('root')
 );
 

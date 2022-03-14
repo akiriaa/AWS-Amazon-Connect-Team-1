@@ -1,12 +1,15 @@
-import Nav from './Nav';
 
+import {Recordings1} from './ui-components';
 
 
 const Recordings = () => {
    
     return (  
+      
       <main className="body-content">
-        {/* <Nav /> */}
+      
+        <Recordings1/>
+
         <div className="home-title">
           <h1> Recordings </h1>
         </div>
@@ -15,5 +18,5 @@ const Recordings = () => {
       </main>
     );
   }
-   
+  
   export default Recordings;
