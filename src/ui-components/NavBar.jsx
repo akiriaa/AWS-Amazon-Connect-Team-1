@@ -6,25 +6,14 @@
 
 /* eslint-disable */
 import React from "react";
-import {
-  getOverrideProps,
-  useAuthSignOutAction,
-  useNavigateAction,
-} from "@aws-amplify/ui-react/internal";
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Icon, Image, SearchField, Text } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
-  const { audio, overrides, ...rest } = props;
-  const recordingsOnClick = useNavigateAction({
-    type: "url",
-    url: audio?.filePath,
-  });
-  const dashboardOnClick = useNavigateAction({ type: "reload" });
-  const imageOnClick = useAuthSignOutAction({ global: false });
+  const { overrides, ...rest } = props;
   return (
     <Flex
       gap="20px"
       direction="row"
-      width="1440px"
       justifyContent="center"
       alignItems="center"
       position="relative"
@@ -37,7 +26,7 @@ export default function NavBar(props) {
         gap="2px"
         direction="row"
         width="19px"
-        height="39px"
+        height="43px"
         justifyContent="center"
         alignItems="center"
         shrink="0"
@@ -46,12 +35,17 @@ export default function NavBar(props) {
         {...getOverrideProps(overrides, "Logo")}
       >
         <Icon
-          width="18px"
-          height="18px"
-          viewBox={{ minX: 0, minY: 0, width: 18, height: 18 }}
+          width="28.27px"
+          height="28.47px"
+          viewBox={{
+            minX: 0,
+            minY: 0,
+            width: 28.2724609375,
+            height: 28.474853515625,
+          }}
           paths={[
             {
-              d: "M8.12249 1.60573C8.50171 0.911796 9.49829 0.911796 9.87751 1.60573L10.9602 3.58693C11.1657 3.96292 11.5879 4.16622 12.0099 4.09244L14.234 3.70368C15.0129 3.56751 15.6343 4.34666 15.3282 5.07581L14.4543 7.15757C14.2884 7.55264 14.3927 8.00946 14.7135 8.29344L16.4041 9.78987C16.9963 10.314 16.7745 11.2856 16.0136 11.5009L13.8412 12.1156C13.4289 12.2323 13.1367 12.5986 13.1147 13.0265L12.9989 15.2813C12.9583 16.071 12.0604 16.5034 11.4176 16.0427L9.58254 14.7275C9.23429 14.4779 8.76571 14.4779 8.41746 14.7275L6.58236 16.0427C5.9396 16.5034 5.04172 16.071 5.00113 15.2813L4.88526 13.0265C4.86327 12.5986 4.57112 12.2323 4.15884 12.1156L1.98638 11.5009C1.22546 11.2856 1.0037 10.314 1.59585 9.78987L3.28646 8.29344C3.6073 8.00946 3.71156 7.55264 3.54571 7.15757L2.6718 5.07581C2.36571 4.34666 2.98706 3.56751 3.76604 3.70368L5.99007 4.09244C6.41214 4.16622 6.83431 3.96292 7.03978 3.58693L8.12249 1.60573Z",
+              d: "M13.2356 1.86948C13.5992 1.11495 14.6737 1.11495 15.0373 1.86948L17.5201 7.02178C17.7143 7.42477 18.1525 7.64976 18.5932 7.57273L23.6705 6.6852C24.4495 6.54904 25.0708 7.32819 24.7647 8.05734L22.7544 12.8462C22.5885 13.2413 22.6928 13.6981 23.0136 13.9821L26.9027 17.4245C27.4949 17.9486 27.2731 18.9202 26.5122 19.1355L21.5147 20.5495C21.1024 20.6662 20.8102 21.0325 20.7882 21.4604L20.5217 26.6473C20.4811 27.4371 19.5832 27.8695 18.9405 27.4088L14.719 24.3832C14.3707 24.1336 13.9022 24.1336 13.5539 24.3832L9.33245 27.4088C8.6897 27.8695 7.79181 27.4371 7.75123 26.6473L7.48467 21.4604C7.46268 21.0325 7.17053 20.6662 6.75825 20.5495L1.76073 19.1355C0.999815 18.9202 0.778056 17.9486 1.3702 17.4245L5.25927 13.9821C5.58011 13.6981 5.68438 13.2413 5.51853 12.8462L3.50819 8.05734C3.20209 7.32819 3.82345 6.54904 4.60243 6.6852L9.67976 7.57273C10.1204 7.64976 10.5586 7.42476 10.7528 7.02178L13.2356 1.86948Z",
               fill: "rgba(20,155,252,1)",
               fillRule: "nonzero",
             },
@@ -63,10 +57,10 @@ export default function NavBar(props) {
       </Flex>
       <Text
         fontFamily="Inter"
-        fontSize="48px"
-        fontWeight="300"
+        fontSize="32px"
+        fontWeight="500"
         color="rgba(255,255,255,1)"
-        lineHeight="60px"
+        lineHeight="40px"
         textAlign="left"
         display="flex"
         direction="column"
@@ -77,8 +71,8 @@ export default function NavBar(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="TeamONE"
-        {...getOverrideProps(overrides, "TeamONE")}
+        children="Appleton Care"
+        {...getOverrideProps(overrides, "Appleton Care")}
       ></Text>
       <Text
         fontFamily="Inter"
@@ -97,9 +91,6 @@ export default function NavBar(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Recordings&#xA;"
-        onClick={() => {
-          recordingsOnClick();
-        }}
         {...getOverrideProps(overrides, "Recordings")}
       ></Text>
       <Text
@@ -118,9 +109,6 @@ export default function NavBar(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Dashboard"
-        onClick={() => {
-          dashboardOnClick();
-        }}
         {...getOverrideProps(overrides, "Dashboard")}
       ></Text>
       <SearchField
@@ -143,9 +131,6 @@ export default function NavBar(props) {
         position="relative"
         borderRadius="160px"
         padding="0px 0px 0px 0px"
-        onClick={() => {
-          imageOnClick();
-        }}
         {...getOverrideProps(overrides, "image")}
       ></Image>
     </Flex>

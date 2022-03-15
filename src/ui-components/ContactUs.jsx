@@ -152,7 +152,7 @@ export default function ContactUs(props) {
         placeholder="Placeholder"
         size="large"
         variation="default"
-        {...getOverrideProps(overrides, "SelectFieldcic")}
+        {...getOverrideProps(overrides, "SelectFieldufe")}
       ></SelectField>
       <TextField
         gap="12px"
@@ -164,7 +164,7 @@ export default function ContactUs(props) {
         placeholder="Placeholder"
         size="large"
         variation="default"
-        {...getOverrideProps(overrides, "TextFieldtpp")}
+        {...getOverrideProps(overrides, "TextFieldsoc")}
       ></TextField>
       <SelectField
         gap="12px"
@@ -176,7 +176,7 @@ export default function ContactUs(props) {
         placeholder="Placeholder"
         size="large"
         variation="default"
-        {...getOverrideProps(overrides, "SelectFieldehz")}
+        {...getOverrideProps(overrides, "SelectFieldsfc")}
       ></SelectField>
       <TextField
         gap="12px"
@@ -188,7 +188,7 @@ export default function ContactUs(props) {
         placeholder="Placeholder"
         size="large"
         variation="default"
-        {...getOverrideProps(overrides, "TextFieldoav")}
+        {...getOverrideProps(overrides, "TextFieldnrx")}
       ></TextField>
       <TextField
         gap="12px"
@@ -200,7 +200,7 @@ export default function ContactUs(props) {
         placeholder="Placeholder"
         size="large"
         variation="default"
-        {...getOverrideProps(overrides, "TextFieldmkm")}
+        {...getOverrideProps(overrides, "TextFieldqho")}
       ></TextField>
       <Button
         border="1px SOLID rgba(0,0,0,0)"
@@ -224,7 +224,7 @@ export default function ContactUs(props) {
         width="201px"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 28ver")}
+        {...getOverrideProps(overrides, "Frame 28tvb")}
       >
         <Flex
           gap="8px"
@@ -234,7 +234,7 @@ export default function ContactUs(props) {
           height="24px"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Frame 28fya")}
+          {...getOverrideProps(overrides, "Frame 28ngd")}
         >
           <View
             width="24px"
@@ -243,7 +243,7 @@ export default function ContactUs(props) {
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Iconnfu")}
+            {...getOverrideProps(overrides, "Iconozd")}
           >
             <Icon
               width="20px"
@@ -251,7 +251,7 @@ export default function ContactUs(props) {
               viewBox={{ minX: 0, minY: 0, width: 20, height: 20 }}
               paths={[
                 {
-                  d: "M12.25 0.26L12.17 0.22L12.16 0.24C11.46 0.09 10.74 0 10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 5.25 16.69 1.28 12.25 0.26ZM17.41 7L9.42 7L12.13 2.3C14.53 2.96 16.48 4.72 17.41 7ZM11.1 2.08L8.27 7L7.12 9L4.4 4.3C5.84 2.88 7.82 2 10 2C10.37 2 10.74 2.03 11.1 2.08ZM3.7 5.09L6.54 10L7.69 12L2.26 12C2.1 11.36 2 10.69 2 10C2 8.15 2.64 6.45 3.7 5.09ZM2.59 13L10.57 13L7.86 17.7C5.46 17.03 3.52 15.28 2.59 13ZM8.9 17.91L12.89 11L15.61 15.7C14.16 17.12 12.18 18 10 18C9.62 18 9.26 17.96 8.9 17.91L8.9 17.91ZM16.3 14.91L12.3 8L17.73 8C17.9 8.64 18 9.31 18 10C18 11.85 17.36 13.55 16.3 14.91Z",
+                  d: "M12.25 0.26L12.17 0.22L12.16 0.24C11.46 0.09 10.74 0 10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 5.25 16.69 1.28 12.25 0.26ZM17.41 7L9.42 7L12.13 2.3C14.53 2.96 16.48 4.72 17.41 7ZM11.1 2.08L8.27 7L7.12 9L4.4 4.3C5.84 2.88 7.82 2 10 2C10.37 2 10.74 2.03 11.1 2.08ZM3.7 5.09L6.54 10L7.69 12L2.26 12C2.1 11.36 2 10.69 2 10C2 8.15 2.64 6.45 3.7 5.09ZM2.59 13L10.57 13L7.86 17.7C5.46 17.03 3.52 15.28 2.59 13ZM8.9 17.91L12.89 11L15.61 15.7C14.16 17.12 12.18 18 10 18C9.62 18 9.26 17.96 8.9 17.91ZM16.3 14.91L12.3 8L17.73 8C17.9 8.64 18 9.31 18 10C18 11.85 17.36 13.55 16.3 14.91Z",
                   fill: "rgba(13,26,38,1)",
                   fillRule: "nonzero",
                 },
@@ -261,7 +261,7 @@ export default function ContactUs(props) {
               bottom="8.33%"
               left="8.33%"
               right="8.33%"
-              {...getOverrideProps(overrides, "Vectorppc")}
+              {...getOverrideProps(overrides, "Vectorvuo")}
             ></Icon>
           </View>
           <Text
@@ -299,7 +299,7 @@ export default function ContactUs(props) {
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Iconaqy")}
+            {...getOverrideProps(overrides, "Iconevg")}
           >
             <Icon
               width="15px"
@@ -317,7 +317,7 @@ export default function ContactUs(props) {
               bottom="12.5%"
               left="20.83%"
               right="16.67%"
-              {...getOverrideProps(overrides, "Vectorsti")}
+              {...getOverrideProps(overrides, "Vectorjgp")}
             ></Icon>
           </View>
           <Text

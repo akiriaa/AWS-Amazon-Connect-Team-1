@@ -18,7 +18,8 @@ import { NavBar } from './ui-components';
 import { RecPage} from './ui-components';
 import { ContactPage} from './ui-components';
 //import Home from './ui-components'
-import {Dashboard} from './ui-components'
+import {NewDashboard} from './ui-components'
+import {NewRecordingsPage} from './ui-components'
 
 
 
@@ -29,7 +30,7 @@ function App() {
     <Authenticator>
       {({ signOut }) => (
         <main>
-          <Dashboard/>
+          <NewDashboard/>
           
         </main>
       )}

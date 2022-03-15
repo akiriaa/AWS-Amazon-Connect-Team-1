@@ -6,8 +6,10 @@
 
 import React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { FlexProps } from "@aws-amplify/ui-react";
-export declare type NavBarProps = React.PropsWithChildren<Partial<FlexProps> & {
+import { ViewProps } from "@aws-amplify/ui-react";
+export declare type RecPage2Props = React.PropsWithChildren<Partial<ViewProps> & {
+    property1?: "Default";
+} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function NavBar(props: NavBarProps): React.ReactElement;
+export default function RecPage2(props: RecPage2Props): React.ReactElement;

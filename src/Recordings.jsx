@@ -1,21 +1,19 @@
 
-import {Recordings1} from './ui-components';
+import {NewRecordingsPage} from './ui-components';
 
 
 const Recordings = () => {
    
     return (  
       
-      <main className="body-content">
       
-        <Recordings1/>
+    
+        <NewRecordingsPage/>
 
-        <div className="home-title">
-          <h1> Recordings </h1>
-        </div>
+        
   
         
-      </main>
+    
     );
   }
   

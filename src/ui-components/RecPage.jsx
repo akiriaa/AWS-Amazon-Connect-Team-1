@@ -8,7 +8,7 @@
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import NavBar from "./NavBar";
-import { Icon, IconWrapText, View } from "@aws-amplify/ui-react";
+import { Icon, View } from "@aws-amplify/ui-react";
 export default function RecPage(props) {
   const { overrides, ...rest } = props;
   return (
@@ -25,8 +25,6 @@ export default function RecPage(props) {
         width="1512px"
         position="absolute"
         display="flex"
-        align-items = "center"
-        flex-wrap = "wrap"
         top="0px"
         left="0px"
         height="105px"

@@ -134,7 +134,7 @@ export default function CardF(props) {
             size="small"
             variation="default"
             children="New"
-            {...getOverrideProps(overrides, "Badgeklc")}
+            {...getOverrideProps(overrides, "Badgechz")}
           ></Badge>
           <Badge
             fontSize="12px"
@@ -152,7 +152,7 @@ export default function CardF(props) {
             size="small"
             variation="default"
             children="Classic"
-            {...getOverrideProps(overrides, "Badgemib")}
+            {...getOverrideProps(overrides, "Badgezob")}
           ></Badge>
           <Badge
             fontSize="12px"
@@ -170,7 +170,7 @@ export default function CardF(props) {
             size="small"
             variation="default"
             children="Modern"
-            {...getOverrideProps(overrides, "Badgeegt")}
+            {...getOverrideProps(overrides, "Badgecmb")}
           ></Badge>
         </Flex>
         <Text
@@ -256,7 +256,7 @@ export default function CardF(props) {
             height="24px"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Featuretit")}
+            {...getOverrideProps(overrides, "Featurebwz")}
           >
             <View
               width="24px"
@@ -265,16 +265,16 @@ export default function CardF(props) {
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Iconiwy")}
+              {...getOverrideProps(overrides, "Iconnda")}
             >
               <Icon
                 width="17.58984375px"
-                height="13.40997314453125px"
+                height="13.4100341796875px"
                 viewBox={{
                   minX: 0,
                   minY: 0,
                   width: 17.58984375,
-                  height: 13.40997314453125,
+                  height: 13.4100341796875,
                 }}
                 paths={[
                   {
@@ -288,7 +288,7 @@ export default function CardF(props) {
                 bottom="20.83%"
                 left="14.21%"
                 right="12.5%"
-                {...getOverrideProps(overrides, "Vectorjnl")}
+                {...getOverrideProps(overrides, "Vectorjgq")}
               ></Icon>
             </View>
             <Text
@@ -318,7 +318,7 @@ export default function CardF(props) {
             height="24px"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Featurecbh")}
+            {...getOverrideProps(overrides, "Featureltp")}
           >
             <View
               width="24px"
@@ -327,16 +327,16 @@ export default function CardF(props) {
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Iconomy")}
+              {...getOverrideProps(overrides, "Iconftq")}
             >
               <Icon
                 width="17.58984375px"
-                height="13.40997314453125px"
+                height="13.4100341796875px"
                 viewBox={{
                   minX: 0,
                   minY: 0,
                   width: 17.58984375,
-                  height: 13.40997314453125,
+                  height: 13.4100341796875,
                 }}
                 paths={[
                   {
@@ -350,7 +350,7 @@ export default function CardF(props) {
                 bottom="20.83%"
                 left="14.21%"
                 right="12.5%"
-                {...getOverrideProps(overrides, "Vectorsau")}
+                {...getOverrideProps(overrides, "Vectorgje")}
               ></Icon>
             </View>
             <Text
@@ -380,7 +380,7 @@ export default function CardF(props) {
             height="24px"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Featurerel")}
+            {...getOverrideProps(overrides, "Featuresfb")}
           >
             <View
               width="24px"
@@ -389,16 +389,16 @@ export default function CardF(props) {
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Iconbay")}
+              {...getOverrideProps(overrides, "Iconzvw")}
             >
               <Icon
                 width="17.58984375px"
-                height="13.40997314453125px"
+                height="13.4100341796875px"
                 viewBox={{
                   minX: 0,
                   minY: 0,
                   width: 17.58984375,
-                  height: 13.40997314453125,
+                  height: 13.4100341796875,
                 }}
                 paths={[
                   {
@@ -412,7 +412,7 @@ export default function CardF(props) {
                 bottom="20.83%"
                 left="14.21%"
                 right="12.5%"
-                {...getOverrideProps(overrides, "Vectorpvg")}
+                {...getOverrideProps(overrides, "Vectoraio")}
               ></Icon>
             </View>
             <Text
