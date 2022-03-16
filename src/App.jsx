@@ -29,12 +29,11 @@ import NewRecordingsPage from './ui-components/NewRecordingsPage';
 function App() {
   return (
     <Authenticator>
-      {({ signOut }) => (
+
         <main>
           <NewDashboard/>
-          
         </main>
-      )}
+      )
     </Authenticator>
   );
 }
