@@ -6,9 +6,11 @@
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authawsamazonconnectteam64605a52"
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "apiKeyExpirationDate": "2022-03-23T19:41:56.181Z",
+              "description": ""
             }
           },
           "additionalAuthenticationProviders": [
@@ -16,11 +18,9 @@
               "authenticationType": "AWS_IAM"
             },
             {
-              "authenticationType": "API_KEY",
-              "apiKeyConfig": {
-                "apiKeyExpirationDays": 365,
-                "apiKeyExpirationDate": "2023-03-09T02:46:11.291Z",
-                "description": "audio"
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authawsamazonconnectteam64605a52"
               }
             }
           ]
@@ -54,5 +54,12 @@
       }
     }
   },
-  "storage": {}
+  "storage": {},
+  "function": {
+    "reactSampleLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  }
 }

@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "awsamazonconnectteam64605a52": {}
+      },
+      "function": {
+        "reactSampleLambda": {
+          "deploymentBucketName": "amplify-awsamazonconnectteam-master-182211-deployment",
+          "s3Key": "amplify-builds/reactSampleLambda-7a547250584e32684f67-build.zip"
+        }
       }
     }
   },
