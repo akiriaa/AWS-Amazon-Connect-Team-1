@@ -6,46 +6,11 @@
 
 /* eslint-disable */
 import React from "react";
-import {
-  getOverrideProps,
-  getOverridesFromVariants,
-  mergeVariantsAndOverrides,
-} from "@aws-amplify/ui-react/internal";
+import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 import Component1 from "./Component1";
 export default function RecPage2(props) {
-  const { overrides: overridesProp, ...rest } = props;
-  const variants = [
-    {
-      overrides: {
-        "Frame 418": {},
-        "Component 1": {},
-        "Rectangle 4": {},
-        "Rectangle 5": {},
-        Recordings: {},
-        "Rectangle 6": {},
-        "Line 7": {},
-        "Line 6": {},
-        "Line 5": {},
-        "Line 4": {},
-        "File Name": {},
-        Agent: {},
-        "Initiation Timestamp": {},
-        SearchField: {},
-        SelectField: {},
-        Duration: {},
-        Recording: {},
-        Transcript: {},
-        "Line 3": {},
-        RecPage2: {},
-      },
-      variantValues: { property1: "Default" },
-    },
-  ];
-  const overrides = mergeVariantsAndOverrides(
-    getOverridesFromVariants(variants, props),
-    overridesProp || {}
-  );
+  const { overrides, ...rest } = props;
   return (
     <View
       width="1512px"
@@ -110,10 +75,10 @@ export default function RecPage2(props) {
         justifyContent="flex-start"
         letterSpacing="0.49px"
         position="absolute"
-        top="18.02%"
-        bottom="79.53%"
-        left="38.43%"
-        right="38.36%"
+        top="18.33%"
+        bottom="79.23%"
+        left="38.36%"
+        right="38.43%"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Recordings"

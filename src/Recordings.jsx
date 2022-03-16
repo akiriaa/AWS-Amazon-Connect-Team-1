@@ -1,5 +1,5 @@
 
-import {NewRecordingsPage} from './ui-components';
+import {RecPage2, Component1} from './ui-components';
 
 
 const Recordings = () => {
@@ -8,12 +8,14 @@ const Recordings = () => {
       
       
     
-        <NewRecordingsPage/>
+        
+        <RecPage2/>
+        
 
         
   
         
-    
+      
     );
   }
   

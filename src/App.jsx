@@ -19,7 +19,8 @@ import { RecPage} from './ui-components';
 import { ContactPage} from './ui-components';
 //import Home from './ui-components'
 import {NewDashboard} from './ui-components'
-import {NewRecordingsPage} from './ui-components'
+import {RecPage2} from './ui-components'
+import NewRecordingsPage from './ui-components/NewRecordingsPage';
 
 
 

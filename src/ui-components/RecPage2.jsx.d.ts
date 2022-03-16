@@ -8,8 +8,6 @@ import React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { ViewProps } from "@aws-amplify/ui-react";
 export declare type RecPage2Props = React.PropsWithChildren<Partial<ViewProps> & {
-    property1?: "Default";
-} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
 export default function RecPage2(props: RecPage2Props): React.ReactElement;

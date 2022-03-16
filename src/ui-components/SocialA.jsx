@@ -140,7 +140,7 @@ export default function SocialA(props) {
             <MyIcon
               shrink="0"
               type="arrow-right"
-              {...getOverrideProps(overrides, "MyIconcse")}
+              {...getOverrideProps(overrides, "MyIconxnl")}
             ></MyIcon>
             <Text
               fontFamily="Inter"
@@ -168,12 +168,12 @@ export default function SocialA(props) {
           <Flex
             gap="16px"
             direction="row"
+            width="fit-content"
             alignItems="flex-start"
             shrink="0"
-            width="165px"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Shareaah")}
+            {...getOverrideProps(overrides, "Shareyvi")}
           >
             <Text
               fontFamily="Inter"
@@ -191,22 +191,22 @@ export default function SocialA(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Share"
-              {...getOverrideProps(overrides, "Sharegxq")}
+              {...getOverrideProps(overrides, "Sharerxk")}
             ></Text>
             <MyIcon
               shrink="0"
               type="bookmark_border"
-              {...getOverrideProps(overrides, "MyIconbqn")}
+              {...getOverrideProps(overrides, "MyIconxcp")}
             ></MyIcon>
             <MyIcon
               shrink="0"
               type="share"
-              {...getOverrideProps(overrides, "MyIconqhp")}
+              {...getOverrideProps(overrides, "MyIconpro")}
             ></MyIcon>
             <MyIcon
               shrink="0"
               type="more_vert"
-              {...getOverrideProps(overrides, "MyIconstz")}
+              {...getOverrideProps(overrides, "MyIcondis")}
             ></MyIcon>
           </Flex>
         </Flex>
@@ -229,12 +229,12 @@ export default function SocialA(props) {
         objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Read moreqwz")}
+        {...getOverrideProps(overrides, "Read morewbv")}
       >
         <MyIcon
           shrink="0"
           type="arrow-right"
-          {...getOverrideProps(overrides, "MyIconazr")}
+          {...getOverrideProps(overrides, "MyIconkpp")}
         ></MyIcon>
         <Text
           fontFamily="Inter"
@@ -255,7 +255,7 @@ export default function SocialA(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Read more"
-          {...getOverrideProps(overrides, "Read moreogg")}
+          {...getOverrideProps(overrides, "Read moretha")}
         ></Text>
       </Flex>
     </Flex>

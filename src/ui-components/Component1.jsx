@@ -8,12 +8,15 @@
 import React from "react";
 import {
   getOverrideProps,
-  useAuthSignOutAction,
+  useNavigateAction,
 } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Icon, Text, View } from "@aws-amplify/ui-react";
 export default function Component1(props) {
   const { overrides, ...rest } = props;
-  const patheltOnClick = useAuthSignOutAction({ global: false });
+  const buttongyvOnClick = useNavigateAction({
+    type: "url",
+    url: "/Users/alyssasullins/AWS-Amazon-Connect-Team-1/src/ui-components/RecPage2.jsx",
+  });
   return (
     <View
       width="1532px"
@@ -129,7 +132,7 @@ export default function Component1(props) {
                         bottom="0%"
                         left="0%"
                         right="0%"
-                        {...getOverrideProps(overrides, "Group 3ume")}
+                        {...getOverrideProps(overrides, "Group 3vwk")}
                       >
                         <Icon
                           width="25.8896484375px"
@@ -152,7 +155,7 @@ export default function Component1(props) {
                           bottom="0%"
                           left="0%"
                           right="0%"
-                          {...getOverrideProps(overrides, "Fill 1koa")}
+                          {...getOverrideProps(overrides, "Fill 1apt")}
                         ></Icon>
                       </View>
                       <Icon
@@ -176,7 +179,7 @@ export default function Component1(props) {
                         bottom="47.46%"
                         left="35.07%"
                         right="36.54%"
-                        {...getOverrideProps(overrides, "Fill 4urb")}
+                        {...getOverrideProps(overrides, "Fill 4bsz")}
                       ></Icon>
                       <Icon
                         width="4.9365234375px"
@@ -199,7 +202,7 @@ export default function Component1(props) {
                         bottom="47.97%"
                         left="63.47%"
                         right="17.46%"
-                        {...getOverrideProps(overrides, "Fill 6mod")}
+                        {...getOverrideProps(overrides, "Fill 6fvm")}
                       ></Icon>
                       <Icon
                         width="3.890625px"
@@ -222,7 +225,7 @@ export default function Component1(props) {
                         bottom="49.87%"
                         left="19.95%"
                         right="65.02%"
-                        {...getOverrideProps(overrides, "Fill 8kfs")}
+                        {...getOverrideProps(overrides, "Fill 8box")}
                       ></Icon>
                       <Icon
                         width="4.03515625px"
@@ -446,7 +449,7 @@ export default function Component1(props) {
                       bottom="0%"
                       left="0%"
                       right="0%"
-                      {...getOverrideProps(overrides, "Group 3bzh")}
+                      {...getOverrideProps(overrides, "Group 3rtl")}
                     >
                       <Icon
                         width="75.15625px"
@@ -469,7 +472,7 @@ export default function Component1(props) {
                         bottom="0%"
                         left="0%"
                         right="0%"
-                        {...getOverrideProps(overrides, "Fill 1lor")}
+                        {...getOverrideProps(overrides, "Fill 1fux")}
                       ></Icon>
                     </View>
                     <View
@@ -502,7 +505,7 @@ export default function Component1(props) {
                         bottom="0%"
                         left="0%"
                         right="0%"
-                        {...getOverrideProps(overrides, "Fill 4tdm")}
+                        {...getOverrideProps(overrides, "Fill 4gim")}
                       ></Icon>
                     </View>
                     <Icon
@@ -549,7 +552,7 @@ export default function Component1(props) {
                       bottom="16.85%"
                       left="6.52%"
                       right="71.66%"
-                      {...getOverrideProps(overrides, "Fill 9pvo")}
+                      {...getOverrideProps(overrides, "Fill 9iic")}
                     ></Icon>
                     <Icon
                       width="5.7421875px"
@@ -572,7 +575,7 @@ export default function Component1(props) {
                       bottom="12.31%"
                       left="66.05%"
                       right="26.31%"
-                      {...getOverrideProps(overrides, "Fill 11tfl")}
+                      {...getOverrideProps(overrides, "Fill 11gpp")}
                     ></Icon>
                     <Icon
                       width="5.6318359375px"
@@ -595,7 +598,7 @@ export default function Component1(props) {
                       bottom="56.06%"
                       left="89.5%"
                       right="3.01%"
-                      {...getOverrideProps(overrides, "Fill 13evp")}
+                      {...getOverrideProps(overrides, "Fill 13zdu")}
                     ></Icon>
                     <Icon
                       width="3.150390625px"
@@ -618,7 +621,7 @@ export default function Component1(props) {
                       bottom="17.67%"
                       left="4.33%"
                       right="91.48%"
-                      {...getOverrideProps(overrides, "Fill 15kvb")}
+                      {...getOverrideProps(overrides, "Fill 15hjh")}
                     ></Icon>
                     <Icon
                       width="5.2255859375px"
@@ -641,7 +644,7 @@ export default function Component1(props) {
                       bottom="6.13%"
                       left="2.77%"
                       right="90.28%"
-                      {...getOverrideProps(overrides, "Fill 17utz")}
+                      {...getOverrideProps(overrides, "Fill 17qwe")}
                     ></Icon>
                     <Icon
                       width="3.8037109375px"
@@ -664,7 +667,7 @@ export default function Component1(props) {
                       bottom="45.17%"
                       left="91.07%"
                       right="3.87%"
-                      {...getOverrideProps(overrides, "Fill 19rlb")}
+                      {...getOverrideProps(overrides, "Fill 19odb")}
                     ></Icon>
                     <Icon
                       width="2.2890625px"
@@ -1228,7 +1231,7 @@ export default function Component1(props) {
                 bottom="37.55%"
                 left="19.34%"
                 right="22.68%"
-                {...getOverrideProps(overrides, "Headbpi")}
+                {...getOverrideProps(overrides, "Headmox")}
               >
                 <View
                   padding="0px 0px 0px 0px"
@@ -1246,7 +1249,7 @@ export default function Component1(props) {
                     bottom="0%"
                     left="0%"
                     right="0%"
-                    {...getOverrideProps(overrides, "Headtjc")}
+                    {...getOverrideProps(overrides, "Headrpe")}
                   >
                     <View
                       padding="0px 0px 0px 0px"
@@ -1255,7 +1258,7 @@ export default function Component1(props) {
                       bottom="0%"
                       left="0%"
                       right="0%"
-                      {...getOverrideProps(overrides, "Group 3kag")}
+                      {...getOverrideProps(overrides, "Group 3mtr")}
                     >
                       <Icon
                         width="43.576171875px"
@@ -1278,7 +1281,7 @@ export default function Component1(props) {
                         bottom="0%"
                         left="0%"
                         right="0%"
-                        {...getOverrideProps(overrides, "Fill 1lqj")}
+                        {...getOverrideProps(overrides, "Fill 1jss")}
                       ></Icon>
                     </View>
                     <Icon
@@ -1302,7 +1305,7 @@ export default function Component1(props) {
                       bottom="1.99%"
                       left="2.03%"
                       right="1.95%"
-                      {...getOverrideProps(overrides, "Fill 4mat")}
+                      {...getOverrideProps(overrides, "Fill 4hro")}
                     ></Icon>
                     <Icon
                       width="10.8525390625px"
@@ -1325,7 +1328,7 @@ export default function Component1(props) {
                       bottom="68.49%"
                       left="70.66%"
                       right="4.43%"
-                      {...getOverrideProps(overrides, "Fill 6zrx")}
+                      {...getOverrideProps(overrides, "Fill 6eud")}
                     ></Icon>
                     <Icon
                       width="12.439453125px"
@@ -1348,7 +1351,7 @@ export default function Component1(props) {
                       bottom="69.87%"
                       left="2.18%"
                       right="69.27%"
-                      {...getOverrideProps(overrides, "Fill 8vab")}
+                      {...getOverrideProps(overrides, "Fill 8ubw")}
                     ></Icon>
                   </View>
                 </View>
@@ -1360,7 +1363,7 @@ export default function Component1(props) {
                 bottom="46.73%"
                 left="29.58%"
                 right="32.04%"
-                {...getOverrideProps(overrides, "Expressionajn")}
+                {...getOverrideProps(overrides, "Expressionnmf")}
               >
                 <View
                   padding="0px 0px 0px 0px"
@@ -1378,7 +1381,7 @@ export default function Component1(props) {
                     bottom="0%"
                     left="0%"
                     right="0%"
-                    {...getOverrideProps(overrides, "Expressiondoh")}
+                    {...getOverrideProps(overrides, "Expressionnvv")}
                   >
                     <View
                       padding="0px 0px 0px 0px"
@@ -1387,7 +1390,7 @@ export default function Component1(props) {
                       bottom="0%"
                       left="0%"
                       right="0%"
-                      {...getOverrideProps(overrides, "Group 3kcp")}
+                      {...getOverrideProps(overrides, "Group 3vby")}
                     >
                       <Icon
                         width="28.8505859375px"
@@ -1410,7 +1413,7 @@ export default function Component1(props) {
                         bottom="0%"
                         left="0%"
                         right="0%"
-                        {...getOverrideProps(overrides, "Fill 1rag")}
+                        {...getOverrideProps(overrides, "Fill 1vtu")}
                       ></Icon>
                     </View>
                     <Icon
@@ -1434,7 +1437,7 @@ export default function Component1(props) {
                       bottom="66.32%"
                       left="23.33%"
                       right="62.93%"
-                      {...getOverrideProps(overrides, "Fill 4mhz")}
+                      {...getOverrideProps(overrides, "Fill 4zza")}
                     ></Icon>
                     <View
                       padding="0px 0px 0px 0px"
@@ -1466,7 +1469,7 @@ export default function Component1(props) {
                         bottom="0%"
                         left="0%"
                         right="0%"
-                        {...getOverrideProps(overrides, "Fill 6inf")}
+                        {...getOverrideProps(overrides, "Fill 6lry")}
                       ></Icon>
                     </View>
                     <Icon
@@ -1490,7 +1493,7 @@ export default function Component1(props) {
                       bottom="29.25%"
                       left="83.94%"
                       right="14.19%"
-                      {...getOverrideProps(overrides, "Fill 9mkc")}
+                      {...getOverrideProps(overrides, "Fill 9iec")}
                     ></Icon>
                     <Icon
                       width="0.513671875px"
@@ -1513,7 +1516,7 @@ export default function Component1(props) {
                       bottom="21.26%"
                       left="17.76%"
                       right="80.46%"
-                      {...getOverrideProps(overrides, "Fill 11mbc")}
+                      {...getOverrideProps(overrides, "Fill 11qmx")}
                     ></Icon>
                     <Icon
                       width="0.3427734375px"
@@ -1536,7 +1539,7 @@ export default function Component1(props) {
                       bottom="15.44%"
                       left="38.11%"
                       right="60.7%"
-                      {...getOverrideProps(overrides, "Fill 13grr")}
+                      {...getOverrideProps(overrides, "Fill 13crp")}
                     ></Icon>
                     <Icon
                       width="0.4228515625px"
@@ -1559,7 +1562,7 @@ export default function Component1(props) {
                       bottom="18.17%"
                       left="27.39%"
                       right="71.15%"
-                      {...getOverrideProps(overrides, "Fill 15oav")}
+                      {...getOverrideProps(overrides, "Fill 15omm")}
                     ></Icon>
                     <Icon
                       width="0.2861328125px"
@@ -1582,7 +1585,7 @@ export default function Component1(props) {
                       bottom="22.8%"
                       left="73.06%"
                       right="25.94%"
-                      {...getOverrideProps(overrides, "Fill 17pjz")}
+                      {...getOverrideProps(overrides, "Fill 17iyv")}
                     ></Icon>
                     <Icon
                       width="0.1005859375px"
@@ -1605,7 +1608,7 @@ export default function Component1(props) {
                       bottom="23.84%"
                       left="73%"
                       right="26.65%"
-                      {...getOverrideProps(overrides, "Fill 19xva")}
+                      {...getOverrideProps(overrides, "Fill 19cbp")}
                     ></Icon>
                   </View>
                 </View>
@@ -1668,24 +1671,29 @@ export default function Component1(props) {
         <Button
           borderRadius="21px"
           display="flex"
+          width="fit-content"
           shrink="0"
           height="58px"
           backgroundColor="rgba(125,214,232,1)"
           size="default"
           variation="default"
           children="Recordings"
-          {...getOverrideProps(overrides, "Buttonmyx")}
+          onClick={() => {
+            buttongyvOnClick();
+          }}
+          {...getOverrideProps(overrides, "Buttongyv")}
         ></Button>
         <Button
           borderRadius="21px"
           display="flex"
+          width="fit-content"
           shrink="0"
           height="58px"
           backgroundColor="rgba(125,214,232,1)"
           size="default"
           variation="default"
           children="Dashboard"
-          {...getOverrideProps(overrides, "Buttonngl")}
+          {...getOverrideProps(overrides, "Buttonyum")}
         ></Button>
       </Flex>
       <Flex
@@ -1697,7 +1705,7 @@ export default function Component1(props) {
         justifyContent="center"
         alignItems="center"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Avatars Default with Backdroppdl")}
+        {...getOverrideProps(overrides, "Avatars Default with Backdroprwo")}
       >
         <View
           width="103px"
@@ -1715,7 +1723,7 @@ export default function Component1(props) {
             position="absolute"
             top="0px"
             left="20.5px"
-            {...getOverrideProps(overrides, "Avatars Default with Backdropoud")}
+            {...getOverrideProps(overrides, "Avatars Default with Backdropcuk")}
           >
             <View
               padding="0px 0px 0px 0px"
@@ -1757,7 +1765,7 @@ export default function Component1(props) {
                   bottom="0%"
                   left="0%"
                   right="0%"
-                  {...getOverrideProps(overrides, "Vectorkth")}
+                  {...getOverrideProps(overrides, "Vectorqcv")}
                 ></Icon>
               </View>
               <Icon
@@ -1785,7 +1793,7 @@ export default function Component1(props) {
                 bottom="0%"
                 left="14.29%"
                 right="14.29%"
-                {...getOverrideProps(overrides, "Groupcrn")}
+                {...getOverrideProps(overrides, "Grouprwm")}
               >
                 <View
                   padding="0px 0px 0px 0px"
@@ -1794,7 +1802,7 @@ export default function Component1(props) {
                   bottom="0%"
                   left="0%"
                   right="0%"
-                  {...getOverrideProps(overrides, "Groupqii")}
+                  {...getOverrideProps(overrides, "Groupjqx")}
                 >
                   <Icon
                     width="44.28515625px"
@@ -1849,7 +1857,7 @@ export default function Component1(props) {
                     bottom="51.07%"
                     left="46%"
                     right="46%"
-                    {...getOverrideProps(overrides, "Nosekhx")}
+                    {...getOverrideProps(overrides, "Noseutm")}
                   >
                     <View
                       padding="0px 0px 0px 0px"
@@ -1881,7 +1889,7 @@ export default function Component1(props) {
                         bottom="0%"
                         left="0%"
                         right="0%"
-                        {...getOverrideProps(overrides, "Noseqsy")}
+                        {...getOverrideProps(overrides, "Nosereg")}
                       ></Icon>
                     </View>
                   </View>
@@ -2106,7 +2114,7 @@ export default function Component1(props) {
                     bottom="40.71%"
                     left="40.56%"
                     right="40.55%"
-                    {...getOverrideProps(overrides, "Mouthfhb")}
+                    {...getOverrideProps(overrides, "Mouthibb")}
                   >
                     <View
                       padding="0px 0px 0px 0px"
@@ -2138,7 +2146,7 @@ export default function Component1(props) {
                         bottom="0%"
                         left="0%"
                         right="0%"
-                        {...getOverrideProps(overrides, "Mouthazu")}
+                        {...getOverrideProps(overrides, "Mouthzdk")}
                       ></Icon>
                       <Icon
                         width="5.62109375px"
@@ -2161,10 +2169,7 @@ export default function Component1(props) {
                         bottom="0%"
                         left="16.4%"
                         right="16.42%"
-                        onClick={() => {
-                          patheltOnClick();
-                        }}
-                        {...getOverrideProps(overrides, "Pathelt")}
+                        {...getOverrideProps(overrides, "Pathbiy")}
                       ></Icon>
                       <Icon
                         width="6.865234375px"
@@ -2187,7 +2192,7 @@ export default function Component1(props) {
                         bottom="73.68%"
                         left="10.29%"
                         right="7.67%"
-                        {...getOverrideProps(overrides, "Pathcow")}
+                        {...getOverrideProps(overrides, "Pathqid")}
                       ></Icon>
                     </View>
                   </View>
@@ -2230,7 +2235,7 @@ export default function Component1(props) {
                         bottom="-100%"
                         left="0%"
                         right="72.5%"
-                        {...getOverrideProps(overrides, "Closed-Eyemto")}
+                        {...getOverrideProps(overrides, "Closed-Eyehyh")}
                       ></Icon>
                       <Icon
                         width="4.87109375px"
@@ -2253,7 +2258,7 @@ export default function Component1(props) {
                         bottom="-100%"
                         left="72.5%"
                         right="0%"
-                        {...getOverrideProps(overrides, "Closed-Eyeyni")}
+                        {...getOverrideProps(overrides, "Closed-Eyejxg")}
                       ></Icon>
                     </View>
                   </View>
@@ -2308,7 +2313,7 @@ export default function Component1(props) {
                           bottom="0%"
                           left="0%"
                           right="65.91%"
-                          {...getOverrideProps(overrides, "Eyebrowgol")}
+                          {...getOverrideProps(overrides, "Eyebroweqz")}
                         ></Icon>
                         <Icon
                           width="6.642578125px"
@@ -2333,7 +2338,7 @@ export default function Component1(props) {
                           right="-34.09%"
                           transformOrigin="top left"
                           transform="rotate(180deg)"
-                          {...getOverrideProps(overrides, "Eyebrowtys")}
+                          {...getOverrideProps(overrides, "Eyebrowhcr")}
                         ></Icon>
                       </View>
                     </View>
@@ -2386,7 +2391,7 @@ export default function Component1(props) {
                           bottom="0%"
                           left="0%"
                           right="0%"
-                          {...getOverrideProps(overrides, "Vectordjf")}
+                          {...getOverrideProps(overrides, "Vectoreig")}
                         ></Icon>
                       </View>
                       <Icon

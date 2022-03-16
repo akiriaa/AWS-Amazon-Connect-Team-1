@@ -43,6 +43,7 @@ export default function SocialB(props) {
         <Flex
           gap="9px"
           direction="row"
+          width="fit-content"
           alignItems="flex-start"
           shrink="0"
           height="24px"
@@ -53,7 +54,7 @@ export default function SocialB(props) {
           <MyIcon
             shrink="0"
             type="favorite"
-            {...getOverrideProps(overrides, "MyIcondzz")}
+            {...getOverrideProps(overrides, "MyIconaax")}
           ></MyIcon>
           <Text
             fontFamily="Inter"
@@ -103,7 +104,7 @@ export default function SocialB(props) {
           height="80px"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Framebbp")}
+          {...getOverrideProps(overrides, "Frameapr")}
         >
           <Flex
             gap="16px"
@@ -114,17 +115,18 @@ export default function SocialB(props) {
             objectFit="cover"
             position="relative"
             padding="0px 0px 0px 0px"
-            {...getOverrideProps(overrides, "Framepkq")}
+            {...getOverrideProps(overrides, "Framemgx")}
           >
             <Flex
               gap="16px"
               direction="row"
+              width="fit-content"
               alignItems="flex-start"
               shrink="0"
               height="24px"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Framesmg")}
+              {...getOverrideProps(overrides, "Framejlc")}
             >
               <Text
                 fontFamily="Inter"
@@ -192,12 +194,12 @@ export default function SocialB(props) {
               height="24px"
               position="relative"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "Framexcm")}
+              {...getOverrideProps(overrides, "Framedqt")}
             >
               <MyIcon
                 shrink="0"
                 type="more_horiz"
-                {...getOverrideProps(overrides, "MyIconnyd")}
+                {...getOverrideProps(overrides, "MyIconcew")}
               ></MyIcon>
             </Flex>
           </Flex>
@@ -235,22 +237,23 @@ export default function SocialB(props) {
         objectFit="cover"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Sharexmq")}
+        {...getOverrideProps(overrides, "Sharedan")}
       >
         <Flex
           gap="16px"
           direction="row"
+          width="fit-content"
           alignItems="flex-start"
           shrink="0"
           height="24px"
           position="relative"
           padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "Shareitv")}
+          {...getOverrideProps(overrides, "Sharemny")}
         >
           <MyIcon
             shrink="0"
             type="reply"
-            {...getOverrideProps(overrides, "MyIconrku")}
+            {...getOverrideProps(overrides, "MyIconorp")}
           ></MyIcon>
           <Text
             fontFamily="Inter"
@@ -268,12 +271,13 @@ export default function SocialB(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="99"
-            {...getOverrideProps(overrides, "99bju")}
+            {...getOverrideProps(overrides, "99wcp")}
           ></Text>
         </Flex>
         <Flex
           gap="16px"
           direction="row"
+          width="fit-content"
           alignItems="flex-start"
           shrink="0"
           height="24px"
@@ -284,7 +288,7 @@ export default function SocialB(props) {
           <MyIcon
             shrink="0"
             type="shuffle"
-            {...getOverrideProps(overrides, "MyIconiew")}
+            {...getOverrideProps(overrides, "MyIcondiy")}
           ></MyIcon>
           <Text
             fontFamily="Inter"
@@ -302,12 +306,13 @@ export default function SocialB(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="99"
-            {...getOverrideProps(overrides, "99nsx")}
+            {...getOverrideProps(overrides, "99wgr")}
           ></Text>
         </Flex>
         <Flex
           gap="16px"
           direction="row"
+          width="fit-content"
           alignItems="flex-start"
           shrink="0"
           height="24px"
@@ -318,7 +323,7 @@ export default function SocialB(props) {
           <MyIcon
             shrink="0"
             type="favorite_border"
-            {...getOverrideProps(overrides, "MyIcondco")}
+            {...getOverrideProps(overrides, "MyIcondjl")}
           ></MyIcon>
           <Text
             fontFamily="Inter"
@@ -336,13 +341,13 @@ export default function SocialB(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="99"
-            {...getOverrideProps(overrides, "99fne")}
+            {...getOverrideProps(overrides, "99qop")}
           ></Text>
         </Flex>
         <MyIcon
           shrink="0"
           type="share"
-          {...getOverrideProps(overrides, "MyIcondld")}
+          {...getOverrideProps(overrides, "MyIconloz")}
         ></MyIcon>
       </Flex>
     </Flex>
