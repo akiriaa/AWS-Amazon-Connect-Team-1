@@ -9,6 +9,7 @@ import Chat from './Chat';
 import Recordings from './Recordings';
 // import awsExports from './aws-exports'
 import Nav from './Nav';
+import "amazon-connect-streams";
 
 
 

@@ -2,6 +2,7 @@ import Nav from './Nav';
 import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import Chat from './Chat';
 import Recordings from './Recordings';
+//import connect.core.initCCP from './ amazon-connect-streams/src/core'
 
 const Home = () => {
   
@@ -11,6 +12,7 @@ const Home = () => {
         <div className="home-title">
           <h1> Welcome!</h1>
         </div>
+        {/* <connect.core.initCCP /> */}
 
       
       {/* <ul className="home-button-group">
