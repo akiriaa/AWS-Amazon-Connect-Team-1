@@ -1,10 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
     "api": {
         "AWSAmazonConnectTeam1": {
-<<<<<<< HEAD
-=======
-            "GraphQLAPIKeyOutput": "string",
->>>>>>> master
             "GraphQLAPIIdOutput": "string",
             "GraphQLAPIEndpointOutput": "string"
         }
