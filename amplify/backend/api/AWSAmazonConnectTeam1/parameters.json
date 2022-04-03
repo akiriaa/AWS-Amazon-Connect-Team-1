@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "AWSAmazonConnectTeam1",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2022-03-16T19:42:03.797Z"
+}
