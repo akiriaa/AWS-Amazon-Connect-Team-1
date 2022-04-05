@@ -18,8 +18,8 @@ function List() {
   
         AWS.config.setPromisesDependency();
       AWS.config.update({
-          accessKeyId : 'AKIATUMPDTV3HDT6RFGA',
-          secretAccessKey : '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',
+          accessKeyId : accessKeyId,
+          secretAccessKey : secretAccssKey,
       //    region : 'us-east-1'
   
         })
