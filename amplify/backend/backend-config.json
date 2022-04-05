@@ -54,5 +54,11 @@
       }
     }
   },
-  "storage": {}
+  "storage": {
+    "new0audio": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
+    }
+  }
 }

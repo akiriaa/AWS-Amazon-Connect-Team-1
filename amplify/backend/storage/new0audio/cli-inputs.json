@@ -1,0 +1,14 @@
+{
+  "resourceName": "new0audio",
+  "policyUUID": "3753f9be",
+  "bucketName": "amazon-connect-c5138a2c2b4d",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
