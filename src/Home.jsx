@@ -4,6 +4,9 @@ import Chat from './Chat';
 import Recordings from './Recordings';
 //import connect.core.initCCP from './ amazon-connect-streams/src/core'
 
+// import init from './CCP'
+
+
 const Home = () => {
   
     return (  
@@ -12,7 +15,9 @@ const Home = () => {
         <div className="home-title">
           <h1> Welcome!</h1>
         </div>
+        {/* <div className="content">{Parser(thisIsMyCopy)}</div> */}
         {/* <connect.core.initCCP /> */}
+        {/* <init /> */}
 
       
       {/* <ul className="home-button-group">
