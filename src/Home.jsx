@@ -12,7 +12,6 @@ const Home = () => {
         <div className="home-title">
           <h1> Welcome!</h1>
         </div>
-        {/* <connect.core.initCCP /> */}
 
       
       {/* <ul className="home-button-group">

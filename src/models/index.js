@@ -4,8 +4,10 @@ import { schema } from './schema';
 
 
 
-const { Audio } = initSchema(schema);
+const { Meeting, Attendee, Response } = initSchema(schema);
 
 export {
-  Audio
+  Meeting,
+  Attendee,
+  Response
 };
