@@ -4,8 +4,8 @@ import logo from '../../assets/images/Monsters - Standing.png'
 import './NavMenu.css'
 
 export default function NavMenu() {
-    const singOut = () => {
-        console.log(singOut)
+    const signOut = () => {
+        console.log(signOut)
     }
     return(
         <header className="header">
@@ -23,7 +23,7 @@ export default function NavMenu() {
                         </li>
                     </ul>
                     <div className="log-btn-wrp">
-                        <button onClick={singOut} className='log-btn'>
+                        <button onClick={signOut} className='log-btn'>
                             <img className='log-btn-img' src={avator} alt="" />
                         </button>
                     </div>
