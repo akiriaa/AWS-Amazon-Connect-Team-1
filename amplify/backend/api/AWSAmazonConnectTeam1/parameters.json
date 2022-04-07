@@ -2,5 +2,11 @@
   "AppSyncApiName": "AWSAmazonConnectTeam1",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
-  "AuthModeLastUpdated": "2022-03-16T19:42:03.797Z"
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authawsamazonconnectteam64605a52",
+      "Outputs.UserPoolId"
+    ]
+  },
+  "AuthModeLastUpdated": "2022-03-09T02:46:55.909Z"
 }

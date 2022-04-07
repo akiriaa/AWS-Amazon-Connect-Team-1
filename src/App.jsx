@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { Authenticator } from "@aws-amplify/ui-react";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
@@ -9,10 +10,27 @@ import "./App.css";
 import awsconfig from "./aws-exports";
 import NavMenu from "./components/menu/NavMenu";
 import Root from "./root/Root";
+=======
+import React from 'react';
+import './App.css';
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+import Home from './Home';
+import Chat from './Chat';
+import Recordings from './Recordings';
+// import awsExports from './aws-exports'
+import Nav from './Nav';
+import "amazon-connect-streams";
+
+
+>>>>>>> master
 
 Amplify.configure(awsconfig);
 
 function App() {
+<<<<<<< HEAD
   return (
     <BrowserRouter>
       <Authenticator>
@@ -27,6 +45,24 @@ function App() {
         )}
       </Authenticator>
     </BrowserRouter>
+=======
+  return ( 
+    <Authenticator >
+      {({ signOut }) => (
+        <main>
+          <button onClick={signOut} className="signOut">Sign out</button>
+          <Home />
+        </main>
+      )}
+
+      
+    </Authenticator>
+
+
+
+
+
+>>>>>>> master
   );
 }
 
