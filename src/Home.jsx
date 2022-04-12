@@ -1,23 +1,24 @@
+import "amazon-connect-streams";
+import React, { useEffect } from "react";
+import { render } from "react-dom";
 import Nav from './Nav';
 import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import Chat from './Chat';
 import Recordings from './Recordings';
-import "amazon-connect-streams";
 
-import React, { useEffect } from "react";
-import { render } from "react-dom";
 
 const CCP_URL = "https://awsconnect-team-1.my.connect.aws/ccp-v2/";
 // const LOGIN_URL = "https://<your-saml-login-url>";
-const REGION = "us-east-1"; // e.g. us-west-2
+const REGION = "us-east-2"; // e.g. us-west-2
 
 const Home = () => { 
       useEffect(() => {
         const container = document.getElementById("ccp");
+        //eslint-disable-next-line no-undef
         connect.core.initCCP(container, {
           ccpUrl: CCP_URL,
-          loginUrl: LOGIN_URL,
-          loginPopup: true,
+          // loginUrl: LOGIN_URL,
+          loginPopup: false,
           loginPopupAutoClose: true,
           region: REGION,
           softphone: {
@@ -26,7 +27,9 @@ const Home = () => {
         });
       }, []);
     
-      return <div id="ccp" style={{ width: "320px", height: "500px" }}></div>;
+      return(
+        <div id="ccp" style={{ width: "320px", height: "580px" }}></div>
+      ) 
     }
     // <main className="body-content">
     //     {/* <Nav /> */}
@@ -51,4 +54,6 @@ const Home = () => {
     //     </Router> */}
     //   </main>
 
-render(<Home />, document.getElementById("app"));
+//render(<Home />, document.getElementById("app"));
+
+export default Home;
