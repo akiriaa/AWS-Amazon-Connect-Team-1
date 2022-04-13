@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"7.6.23\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
+  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"7.6.26\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
   "Parameters": {
     "CloudWatchRule": {
       "Type": "String",
@@ -47,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "reactSampleLambda",
+            "reactLambda",
             {
               "Fn::Join": [
                 "",
                 [
-                  "reactSampleLambda",
+                  "reactLambda",
                   "-",
                   {
                     "Ref": "env"
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "awsamazonconnectteamLambdaRoledf04712b",
+            "awsamazonconnectteamLambdaRole48fef085",
             {
               "Fn::Join": [
                 "",
                 [
-                  "awsamazonconnectteamLambdaRoledf04712b",
+                  "awsamazonconnectteamLambdaRole48fef085",
                   "-",
                   {
                     "Ref": "env"

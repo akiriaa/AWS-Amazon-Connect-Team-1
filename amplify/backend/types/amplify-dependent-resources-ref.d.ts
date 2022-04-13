@@ -17,7 +17,7 @@ export type AmplifyDependentResourcesAttributes = {
         }
     },
     "function": {
-        "reactSampleLambda": {
+        "reactLambda": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",

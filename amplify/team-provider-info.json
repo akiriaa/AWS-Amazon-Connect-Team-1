@@ -15,7 +15,11 @@
       "function": {
         "reactSampleLambda": {
           "deploymentBucketName": "amplify-awsamazonconnectteam-master-182211-deployment",
-          "s3Key": "amplify-builds/reactSampleLambda-7a547250584e32684f67-build.zip"
+          "s3Key": "amplify-builds/reactSampleLambda-6f634d764c2b714e4478-build.zip"
+        },
+        "reactLambda": {
+          "deploymentBucketName": "amplify-awsamazonconnectteam-master-182211-deployment",
+          "s3Key": "amplify-builds/reactLambda-44746a426f6837506a43-build.zip"
         }
       },
       "auth": {

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import Chat from './Chat';
 import Recordings from './Recordings';
 
+
 const Home = () => {
   
     return (  
@@ -11,6 +12,7 @@ const Home = () => {
         <div className="home-title">
           <h1> Welcome!</h1>
         </div>
+        
 
       
       {/* <ul className="home-button-group">

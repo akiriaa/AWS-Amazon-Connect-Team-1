@@ -56,7 +56,7 @@
   },
   "storage": {},
   "function": {
-    "reactSampleLambda": {
+    "reactLambda": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
