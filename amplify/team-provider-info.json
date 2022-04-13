@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactsample-dev-114644-authRole",
+      "UnauthRoleArn": "arn:aws:iam::520195416633:role/amplify-reactsample-dev-114644-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::520195416633:role/amplify-reactsample-dev-114644-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactsample-dev-114644-deployment",
+      "UnauthRoleName": "amplify-reactsample-dev-114644-unauthRole",
+      "StackName": "amplify-reactsample-dev-114644",
+      "StackId": "arn:aws:cloudformation:us-east-1:520195416633:stack/amplify-reactsample-dev-114644/6dae16f0-b8e5-11ec-8fc6-0ebce804852b",
+      "AmplifyAppId": "duk1ogr2qz2dz"
+    },
+    "categories": {
+      "function": {
+        "ChimeMeeting": {
+          "deploymentBucketName": "amplify-reactsample-dev-114644-deployment",
+          "s3Key": "amplify-builds/ChimeMeeting-6e597366654938374938-build.zip"
+        }
+      }
+    }
+  }
+}

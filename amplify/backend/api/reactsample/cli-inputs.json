@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "reactsample",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/geronehamiltonjr./react-sample/amplify/backend/api/reactsample/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-04-10T16:01:26.173Z",
+      "keyDescription": ""
+    }
+  }
+}
