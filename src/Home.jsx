@@ -34,7 +34,8 @@ const Home = () => {
       }, []);
     
       return(
-        <><div id="ccp" style={{ width: "320px", height: "580px" }}></div><div id="meeting" style={{ width: "980px", height: "580px", float: "right" }}>
+        <><div id="ccp" style={{ width: "320px", height: "580px", float: "left" }}></div>
+        <div id="meeting" style={{ width: "990px", height: "580px", float: "right" }}>
           <ThemeProvider theme={lightTheme}>
             <MeetingProvider>
               <MeetingForm />
