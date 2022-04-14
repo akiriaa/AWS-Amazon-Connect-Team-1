@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import avator from '../../assets/images/Avatars - Default with Backdrop.png'
 import logo from '../../assets/images/Monsters - Standing.png'
 import './NavMenu.css'
+import avatar2 from './avatar2.jpg'
 
 export default function NavMenu() {
     const signOut = () => {
@@ -24,7 +25,7 @@ export default function NavMenu() {
                     </ul>
                     <div className="log-btn-wrp">
                         <button onClick={signOut} className='log-btn'>
-                            <img className='log-btn-img' src={avator} alt="" />
+                            <img className='log-btn-img' src={avatar2} alt="avatar" />
                         </button>
                     </div>
                 </nav>
