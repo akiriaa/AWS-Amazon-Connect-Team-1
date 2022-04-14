@@ -66,7 +66,7 @@ const MeetingForm: FC = () => {
     <form>
       <FormField
         field={Input}     
-        label='Meeting Id'
+        label='Meeting ID'
         value={meetingTitle}
         fieldProps={{
           name: 'Meeting Id',
