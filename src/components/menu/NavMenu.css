@@ -27,8 +27,11 @@
 }
 .nav-logo {
   font-weight: 500;
-  font-size: 32px;
+  margin-top: 10px;
+  font-size: 40px;
+  font-family: 'Anek Odia', sans-serif;
 }
+
 
 .nav-menu-wrp {
   list-style: none;
