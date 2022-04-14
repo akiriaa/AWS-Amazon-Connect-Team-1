@@ -8,7 +8,7 @@ import Recordings from './Recordings';
 
 
 const CCP_URL = "https://awsconnect-team-1.my.connect.aws/ccp-v2/";
-// const LOGIN_URL = "https://<your-saml-login-url>";
+ const LOGIN_URL = "https://awsconnect-team-1.my.connect.aws/login";
 const REGION = "us-east-2"; // e.g. us-west-2
 
 const Home = () => { 
@@ -17,8 +17,8 @@ const Home = () => {
         //eslint-disable-next-line no-undef
         connect.core.initCCP(container, {
           ccpUrl: CCP_URL,
-          // loginUrl: LOGIN_URL,
-          loginPopup: false,
+          loginUrl: LOGIN_URL,
+          loginPopup: true,
           loginPopupAutoClose: true,
           region: REGION,
           softphone: {
