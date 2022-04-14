@@ -14,13 +14,15 @@ const Home = () => {
     return (  
     <main className="body-content">
 
-
+    <div id="meeting" style={{ width: "980px", height: "580px", float: "right" }}>
       <ThemeProvider theme={lightTheme}>
         <MeetingProvider>
           <MeetingForm />
           <Meeting/>
         </MeetingProvider>
       </ThemeProvider>
+    </div>
+      
 
       
       {/* <ul className="home-button-group">
