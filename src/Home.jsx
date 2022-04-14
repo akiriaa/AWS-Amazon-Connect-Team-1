@@ -3,8 +3,14 @@ import React, { useEffect } from "react";
 import { render } from "react-dom";
 import Nav from './Nav';
 import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
-import Chat from './Chat';
 import Recordings from './Recordings';
+import Meeting from './components/Meeting';
+import MeetingForm from './components/MeetingForm';
+import { ThemeProvider } from 'styled-components';
+import {
+  MeetingProvider,
+  lightTheme
+} from 'amazon-chime-sdk-component-library-react';
 
 
 const CCP_URL = "https://awsconnect-team-1.my.connect.aws/ccp-v2/";
@@ -28,32 +34,16 @@ const Home = () => {
       }, []);
     
       return(
-        <div id="ccp" style={{ width: "320px", height: "580px" }}></div>
+        <><div id="ccp" style={{ width: "320px", height: "580px" }}></div><div id="meeting" style={{ width: "980px", height: "580px", float: "right" }}>
+          <ThemeProvider theme={lightTheme}>
+            <MeetingProvider>
+              <MeetingForm />
+              <Meeting />
+            </MeetingProvider>
+          </ThemeProvider>
+        </div></>
       ) 
     }
-    // <main className="body-content">
-    //     {/* <Nav /> */}
-    //     <div className="home-title">
-    //       <h1> Welcome!</h1>
-    //     </div>
-
-
-      
-    //   {/* <ul className="home-button-group">
-    //     <li> <Link to="./Chat" className="home-nav-button">Chat</Link> </li>
-    //     <li> <Link to="./Recordings" className="home-nav-button">Recordings</Link> </li>
-    //   </ul> */}
-
-
-    //     {/* <Router>
-    //       <Switch>
-    //         <Route exact path="">
-    //           <
-    //         </Route>
-    //       </Switch>
-    //     </Router> */}
-    //   </main>
-
-//render(<Home />, document.getElementById("app"));
+ 
 
 export default Home;
