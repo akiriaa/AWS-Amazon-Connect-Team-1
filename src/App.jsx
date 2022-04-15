@@ -9,6 +9,7 @@ import "./App.css";
 import awsconfig from "./aws-exports";
 import NavMenu from "./components/menu/NavMenu";
 import Root from "./root/Root";
+import List from "./List";
 
 
 Amplify.configure(awsconfig);
@@ -24,6 +25,7 @@ function App() {
             </button>
             <NavMenu />
             <Root />
+            <List/>
           </main>
         )}
       </Authenticator>

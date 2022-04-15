@@ -65,6 +65,30 @@ const createChimeMeeting = async (context) => {
     ExternalUserId: `${uuid().substring(0, 8)}#${name}`.substring(0, 64),
   }).promise());
 
+/*const pipeline={
+    SinkArn: 'arn:aws:s3:::geronechimemeetings', 
+    SinkType: 'S3Bucket',
+    SourceArn: 'arn:aws:chime::520195416633:meeting:' + meetingInfo.Meeting.MeetingId,
+    SourceType: 'ChimeSdkMeeting',
+    ChimeSdkMeetingConfiguration: {
+      ArtifactsConfiguration: {
+        Audio: { 
+          MuxType: 'AudioOnly'
+        },
+        Content: { 
+          State: 'Enabled', 
+          MuxType: 'ContentOnly'
+        },
+        Video: {
+          State: 'Enabled', 
+          MuxType: 'VideoOnly'
+        }
+      }
+  }
+};
+await chime.createMediaCapturePipeline(pipeline).promise();
+*/
+
   return response(200, 'application/json', JSON.stringify(
     {
       Meeting: meetingInfo.Meeting,
@@ -132,4 +156,3 @@ exports.handler = async (event) => {
   }
   throw new Error('Resolver not found.');
 };
-  

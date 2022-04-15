@@ -16,12 +16,26 @@ export type AmplifyDependentResourcesAttributes = {
             "AppClientID": "string"
         }
     },
+    "storage": {
+        "s38b3251ab": {
+            "BucketName": "string",
+            "Region": "string"
+        }
+    },
     "function": {
-        "reactSampleLambda": {
+        "reactLambda": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",
             "LambdaExecutionRole": "string"
+        }
+    },
+    "hosting": {
+        "S3AndCloudFront": {
+            "Region": "string",
+            "HostingBucketName": "string",
+            "WebsiteURL": "string",
+            "S3BucketSecureURL": "string"
         }
     }
 }

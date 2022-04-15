@@ -1,4 +1,4 @@
-import Nav from './Nav';
+import List from './List';
 
 
 
@@ -9,6 +9,7 @@ const Recordings = () => {
         {/* <Nav /> */}
         <div className="home-title">
           <h1> Recordings </h1>
+          <List>{List}</List>
         </div>
   
         

@@ -7,15 +7,16 @@ const s3 = new AWS.S3();
 
 var params = {
   Bucket : 'amazon-connect-c5138a2c2b4d',
+  
 };
 
-s3.listObjects(params, function(err, data) {
+s3.listObjectsV2(params, function(err, data) {
   if (err) {
     console.log("Error", err);
   } else {
     console.log("Success", data);
   }
-});
+}).promise();
 
 
 

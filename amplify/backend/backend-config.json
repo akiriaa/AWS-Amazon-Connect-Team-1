@@ -54,12 +54,24 @@
       }
     }
   },
-  "storage": {},
+  "storage": {
+    "s38b3251ab": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
+    }
+  },
   "function": {
-    "reactSampleLambda": {
+    "reactLambda": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation"
     }
   }
 }
